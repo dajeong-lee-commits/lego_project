@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 16,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });//main
+
+            let categoryBtn = document.querySelector('.category_btn');
+
+            categoryBtn.addEventListener('click', () => {
+                categoryBtn.classList.remove('active');
+                //alert();
+            });
+
+
+
+
+
+        };
+
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="inner">
+                <ul class="header_nav">
+                    <li>
+                        <a href="#" class="search_btn">
+                            <img src="img/icon/icon_search.svg" alt="검색">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="notify_btn">
+                            <img src="img/icon/icon_notice.svg" alt="알림">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_btn">
+                            <img src="img/icon/icon_menu.svg" alt="메뉴">
+                        </a>
+                    </li>
+
+                </ul><!-- .header_nav end -->
+
+
+
+
+
+            </div><!-- .inner -->
+
+        </header><!-- .header end -->
+
+        <main class="main">
+            <div class="inner">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="img/메인/이미지1.jpg" alt="">
+                            </a>
+
+                        </div><!-- .swiper-slide end -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="img/메인/이미지2.png" alt="">
+                            </a>
+                        </div><!-- .swiper-slide end -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="img/메인/이미지3.jpg" alt="">
+                            </a>
+                        </div><!-- .swiper-slide end -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="img/메인/이미지4.jpg" alt="">
+                            </a>
+                        </div><!-- .swiper-slide end -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="img/메인/이미지5.jpg" alt="">
+                            </a>
+                        </div><!-- .swiper-slide end -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+
+        </main><!-- .main end -->
+
+        <section class="section-02">
+            <div class="inner">
+                <div class="title_wrapper">
+                    <div class="text">
+                        <h2>시리즈별</h2>
+                        <p>내 취향에 맞는 시리즈로 볼래요</p>
+                    </div><!-- .text end -->
+                    <a href="#">
+                        <span>더보기</span>
+                        <img src="img/icon/more_view.svg" alt="더보기 버튼">
+                    </a>
+                </div><!-- .title end -->
+                <div class="list">
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/section01-시리즈/series_img.png" alt="">
+                            <strong>원피스</strong>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/section01-시리즈/series_img-1.png" alt="">
+                            <strong>슈퍼마리오</strong>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/section01-시리즈/series_img-2.png" alt="">
+                            <strong>마블</strong>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/section01-시리즈/series_img-3.png" alt="">
+                            <strong>슈퍼배드</strong>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/section01-시리즈/series_img-4.png" alt="">
+                            <strong>디즈니</strong>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/section01-시리즈/series_img-5.png" alt="">
+                            <strong>미니피규어</strong>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/section01-시리즈/series_img-6.png" alt="">
+                            <strong>동물의숲</strong>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/section01-시리즈/series_img-7.png" alt="">
+                            <strong>해리포터</strong>
+                        </a>
+                    </div><!-- .item end -->
+                </div><!-- .list end -->
+
+            </div><!-- .inner end -->
+
+        </section><!-- section-02 end -->
+        <section class="section-03">
+            <div class="inner">
+                <div class="title_wrapper">
+                    <div class="text">
+                        <h2>BEST5</h2>
+                        <p>분야별 베스트 셀러를 모아봤어요</p>
+                    </div><!-- .text end -->
+                    <a href="#">
+                        <span>더보기</span>
+                        <img src="img/icon/more_view.svg" alt="더보기 버튼">
+                    </a>
+                </div><!-- .title end -->
+
+                <ul class="category">
+                    <li><button class="category_btn active">게임</button></li>
+                    <li><button class="category_btn active">어른이</button></li>
+                    <li><button class="category_btn active">빌딩</button></li>
+                    <li><button class="category_btn">동물의숲</button></li>
+                    <li><button class="category_btn">동물</button></li>
+                    <li><button class="category_btn">미술·공예</button></li>
+                    <li><button class="category_btn">유아용</button></li>
+                    <li><button class="category_btn">자동차</button></li>
+                    <li><button class="category_btn">드래곤</button></li>
+                    <li><button class="category_btn">판타지</button></li>
+                    <li><button class="category_btn">영화</button></li>
+                    <li><button class="category_btn">닌자</button></li>
+                    <li><button class="category_btn">프린세스</button></li>
+                    <li><button class="category_btn">히어로</button></li>
+                    <li><button class="category_btn">로봇</button></li>
+                    <li><button class="category_btn">우주</button></li>
+                    <li><button class="category_btn">스포츠</button></li>
+                    <li><button class="category_btn">여행</button></li>
+                </ul><!-- .category end -->
+
+
+                <div class="list">
+                    <div class="item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="img/section02-베스트/img.png" alt="">
+                            </div><!-- img -->
+                            <div class="text">
+                                <p>[한정] 레고 마인크래프트 크리스마스 캘린더 2025</p>
+                                <div class="price">
+                                    <strong>239,900원</strong>
+                                </div><!-- .price end -->
+                                <div class="flag">
+                                    <span>NEW</span>
+                                    <span>단독</span>
+                                </div><!-- .flag end -->
+                            </div><!--text -->
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="img/section02-베스트/img-1.png" alt="">
+                            </div><!-- img -->
+                            <div class="text">
+                                <p>너굴 상점과 부케의 집</p>
+                                <div class="price">
+                                    <span>20%</span>
+                                    <strong>109,900원</strong>
+                                </div><!-- .price end -->
+                            </div><!--text -->
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="img/section02-베스트/img-2.png" alt="">
+                            </div><!-- img -->
+                            <div class="text">
+                                <p>[한정] 슈퍼 마리오 월드 : 마리오와 요시</p>
+                                <div class="price">
+                                    <strong>35,000원</strong>
+                                </div><!-- .price end -->
+                                <div class="flag">
+                                    <span>NEW</span>
+                                </div><!-- flag end -->
+                            </div><!--text -->
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="img/section02-베스트/img-3.png" alt="">
+                            </div><!-- img -->
+                            <div class="text">
+                                <p>부옥의 별자리 관측</p>
+                                <div class="price">
+                                    <strong>12,900원</strong>
+                                </div><!-- .price end -->
+                            </div><!--text -->
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="img/section02-베스트/img-4.png" alt="">
+                            </div><!-- img -->
+                            <div class="text">
+                                <p>[단독] 마리오 카트 : 마리오 & 스탠다드카트</p>
+                                <div class="price">
+                                    <strong>239,900원</strong>
+                                </div><!-- .price end -->
+                                <div class="flag">
+                                    <span>NEW</span>
+                                </div><!-- flag end -->
+                            </div><!--text -->
+                        </a>
+                    </div><!-- .item end -->
+                </div><!-- .list end F-->
+
+            </div><!-- .inner end -->
+
+        </section><!-- section-03 end -->
+        <section class="section-04">
+            <div class="inner">
+                <div class="title_wrapper">
+                    <div class="text">
+                        <h2>커뮤니티</h2>
+                        <p>서로 아이디어를 공유해보세요</p>
+                    </div><!-- .text end -->
+                    <a href="#">
+                        <span>더보기</span>
+                        <img src="img/icon/more_view.svg" alt="더보기 버튼">
+                    </a>
+                </div><!-- .title end -->
+                <div class="list">
+                    <div class="item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="img/section03-커뮤니티/Rectangle 78.png" alt="">
+                            </div><!-- .image end -->
+                            <div class="post">
+                                <div class="text">
+                                    <h3>미대생의 레고 셀프 도색 🥰</h3>
+                                    <p>안녕하세요. 레고 커스텀이 취미인 미대생 입니다. 이번엔 과제하고 남은 재료들로 셀프 도색을 해봤는데 너무 잘나와서 과정샷 올려봐요. 재료는 시내
+                                        화방에서 구할수 있는 친구들입니다!</p>
+                                </div><!-- .text end -->
+                                <div class="post_info">
+                                    <span class="user">yddddj</span>
+                                    <div class="comment">
+                                        <span class="like">
+                                            <img src="img/icon/Vector.svg" alt="좋아요">129
+                                        </span>
+                                        <span class="reply">
+                                            <img src="img/icon/Vector-1.svg" alt="댓글">26
+                                        </span>
+                                    </div><!-- comment end -->
+                                </div><!-- .post_info end -->
+                            </div><!-- .post end -->
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="img/section03-커뮤니티/Rectangle 77.png" alt="">
+                            </div><!-- .image end -->
+                            <div class="post">
+                                <div class="text">
+                                    <h3>미니피규어의 숨겨진 꿀팁?</h3>
+                                    <p>책상위 케이블 이렇게 정리해 놨더니 너무 귀엽네요ㅎㅎ 다들 집에 있는 피규어로 한번 해보세요!</p>
+                                </div><!-- .text end -->
+                                <div class="post_info">
+                                    <span class="user">다됴미</span>
+                                    <div class="comment">
+                                        <span class="like">
+                                            <img src="img/icon/Vector.svg" alt="좋아요">999
+                                        </span>
+                                        <span class="reply">
+                                            <img src="img/icon/Vector-1.svg" alt="댓글">58
+                                        </span>
+                                    </div><!-- .comment end -->
+                                </div><!-- .post_info end -->
+                            </div><!-- .post end -->
+                        </a>
+                    </div><!-- .item end -->
+                </div><!-- .list end F-->
+            </div><!-- .inner end -->
+        </section><!-- section-04 end -->
+
+        <button>dd</button>
+
+        <div class="bottom_nav">
+            <div class="inner">
+                <ul class="nav_btn">
+                    <li>
+                        <a href="#" class="home">
+                            <div class="image">
+                                <img src="img/icon/gnb/icon_home/기본.png" alt="홈버튼">
+                            </div><!-- .image end -->
+                            <span>홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="store">
+                            <div class="image">
+                                <img src="img/icon/gnb/icon_store/기본.png" alt="스토어">
+                            </div>
+                            <span>스토어</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="guide">
+                            <div class="image">
+                                <img src="img/icon/gnb/icon_guide/기본.png" alt="가이드">
+                            </div>
+                            <span>조립가이드</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="notice">
+                            <div class="image">
+                                <img src="img/icon/gnb/icon_home/기본.png" alt="소식">
+                            </div>
+                            <span>소식</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="user">
+                            <div class="image">
+                                <img src="img/icon/gnb/icon_mypage/기본.png" alt="마이">
+                            </div>
+                            <span>마이</span>
+                        </a>
+                    </li>
+                </ul><!-- .nav_btn end -->
+
+            </div><!-- .inner end -->
+        </div><!-- .bottom_nav -->
+
+
+        <footer class="footer">
+
+        </footer>
+    </div><!-- #wrap end -->
+
+</body>
+
+</html>
