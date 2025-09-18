@@ -116,6 +116,7 @@ section .inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 
 }
 
@@ -150,7 +151,7 @@ section .inner {
 
 .section-03 .inner .category li .category_btn {
     display: block;
-    padding: 6px 12px;
+    padding: 5px 12px;
     border: 1px solid #FF3535;
     border-radius: 20px;
     white-space: nowrap;
@@ -199,7 +200,9 @@ section .inner {
     display: flex;
     flex-direction: column;
 }
-
+.section-03 .inner .list .item a .text .price {
+    font-size: 16px;
+}
 .section-03 .inner .list .item a .text .price span {
     color: #FF3535;
 }
