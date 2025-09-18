@@ -1,5 +1,8 @@
 @charset "utf-8";
 @import url('reset.css');
+@import url('../font/pretendard/pretendard.css');
+@import url('../font/tj/stylesheet.css');
+
 
 #wrap {
     max-width: 1024px;
@@ -13,6 +16,11 @@ body {
     background-color: rgb(255, 255, 255);
     line-height: 1.5;
     font-size: 14px;
+    padding-bottom: 80px;
+    font-family: 'Pretendard';
+    
+
+
 
 }
 
@@ -36,6 +44,7 @@ section .inner {
 .title_wrapper h2 {
     font-size: 22px;
     font-weight: bold;
+    font-family: 'TJ Joy of singing B TTF';
     color: #FF3535;
 }
 
@@ -78,6 +87,7 @@ section .inner {
 .main {
     background-color: #ffffff;
 }
+
 .main .inner .swiper-slide {
     width: 70.6%;
     border-radius: 10px;
@@ -101,14 +111,14 @@ section .inner {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;
+ 
     /* 4% */
 
 }
 
 .section-02 .inner .list .item {
     display: flex;
-    width: 19.4%;
-    /* 78px */
+    width: 21.5%;
 }
 
 .section-02 .inner .list .item a {
@@ -116,16 +126,17 @@ section .inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 
 }
 
 .section-02 .inner .list .item a img {
     width: 100%;
     object-fit: cover;
+    margin-bottom: 8px;
 }
 
 .section-02 .inner .list .item a strong {
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -155,7 +166,7 @@ section .inner {
     border: 1px solid #FF3535;
     border-radius: 20px;
     white-space: nowrap;
-    
+
 }
 
 .section-03 .inner .category li .category_btn.active {
@@ -190,22 +201,26 @@ section .inner {
 
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .section-03 .inner .list .item a .image img {
     display: block;
 }
+
 .section-03 .inner .list .item a .text {
     display: flex;
     flex-direction: column;
 }
+
 .section-03 .inner .list .item a .text .price {
     font-size: 16px;
 }
+
 .section-03 .inner .list .item a .text .price span {
     color: #FF3535;
 }
+
 .section-03 .inner .list .item a .text .flag {
     display: flex;
     margin-top: 4px;
@@ -220,13 +235,14 @@ section .inner {
     height: 16px;
     padding: 0 6px;
     font-size: 11px;
-    background-color: #FFC107;
+    background-color: #ffd557;
     border-radius: 4px;
 }
 
 .section-03 .inner .list .item a .text .flag span:nth-child(2) {
     background-color: #FFCCCC;
 }
+
 /* section3-BEST5 */
 
 .section-04 .inner .list {
@@ -237,9 +253,11 @@ section .inner {
 
 .section-04 .inner .list .item {
     width: 100%;
+
 }
 
 .section-04 .inner .list .item a {
+    height: 110px;
     display: block;
     display: flex;
     justify-content: space-between;
@@ -264,6 +282,9 @@ section .inner {
 .section-04 .inner .list .item a .post {
     width: calc(100% - 126px);
     color: #888888;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
@@ -272,7 +293,8 @@ section .inner {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
-    margin-bottom: 8px;
+    line-height: 1.4;
+
 
 }
 
@@ -281,7 +303,7 @@ section .inner {
     font-weight: bold;
     color: #000000;
     margin-bottom: 4px;
-    line-height: 1.4;
+
 
 }
 
@@ -293,28 +315,40 @@ section .inner {
 
 .section-04 .inner .list .item a .post .post_info .comment {
     display: flex;
-    column-gap: 16px;
+
+    gap: 16px;
 }
 
 .section-04 .inner .list .item a .post .post_info .comment span {
     display: flex;
     align-items: center;
-    column-gap: 4px;
+    gap: 4px;
 }
 
 .bottom_nav {
-    background-color: #ffffff;
+    background-color: #FFCCCC;
+    max-width: 1024px;
+    width: calc(100% - 40px);
+    position: fixed;
+    bottom: 0;
+
+
+
+
+
 }
 
 .bottom_nav .inner {
     height: 100px;
     padding: 10px 0 32px;
 
+
 }
 
 .bottom_nav .inner .nav_btn {
     display: flex;
     justify-content: space-between;
+
 }
 
 .bottom_nav .inner .nav_btn li a {
@@ -327,6 +361,7 @@ section .inner {
 
 
 }
+
 .bottom_nav .inner .nav_btn li a .image {
     width: 36px;
     height: 36px;

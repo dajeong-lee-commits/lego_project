@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'TJ Joy of singing L TTF';
+    src: url('TJJoyofsingingLTTF.woff2') format('woff2'),
+        url('TJJoyofsingingLTTF.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TJ Joy of singing EB TTF';
+    src: url('TJJoyofsingingEBTTF.woff2') format('woff2'),
+        url('TJJoyofsingingEBTTF.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TJ Joy of singing B TTF';
+    src: url('TJJoyofsingingBTTF.woff2') format('woff2'),
+        url('TJJoyofsingingBTTF.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TJ Joy of singing M TTF';
+    src: url('TJJoyofsingingMTTF.woff2') format('woff2'),
+        url('TJJoyofsingingMTTF.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
