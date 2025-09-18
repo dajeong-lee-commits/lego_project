@@ -21,7 +21,6 @@ body {
     
 
 
-
 }
 
 section {
@@ -118,7 +117,7 @@ section .inner {
 
 .section-02 .inner .list .item {
     display: flex;
-    width: 21.5%;
+    width: 21%;
 }
 
 .section-02 .inner .list .item a {
@@ -233,14 +232,16 @@ section .inner {
     display: flex;
     align-items: center;
     height: 16px;
-    padding: 0 6px;
+    padding: 1px 6px;
     font-size: 11px;
-    background-color: #ffd557;
-    border-radius: 4px;
+    background-color: #ffeebd;
+    color: #ff9900;
+    border-radius: 2px;
 }
 
 .section-03 .inner .list .item a .text .flag span:nth-child(2) {
-    background-color: #FFCCCC;
+    background-color: #ffe1e1;
+    color: #ff5252
 }
 
 /* section3-BEST5 */
@@ -339,8 +340,8 @@ section .inner {
 }
 
 .bottom_nav .inner {
-    height: 100px;
-    padding: 10px 0 32px;
+    height: 80px;
+    padding: 8px 0 32px;
 
 
 }
@@ -365,7 +366,6 @@ section .inner {
 .bottom_nav .inner .nav_btn li a .image {
     width: 36px;
     height: 36px;
-    margin-bottom: 4px;
 }
 
 .bottom_nav .inner .nav_btn li a .image img {
@@ -375,4 +375,5 @@ section .inner {
 
 .bottom_nav .inner .nav_btn li a span {
     font-size: 12px;
+    font-weight: 600;
 }
