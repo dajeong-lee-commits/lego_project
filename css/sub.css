@@ -189,7 +189,7 @@ button {
 }
 
 .section .inner .list .popup {
-    background-color: #ff9900;
+    max-width: 1040px;
     width: calc(100% - 40px);
     position: fixed;
     bottom: 0;
@@ -208,7 +208,8 @@ button {
 
     to {
         margin-bottom: 66px;
-    }   opacity: 1;
+    }
+
 }
 
 .section .inner .list .popup .layer_popup {
@@ -221,13 +222,13 @@ button {
     border-radius: 10px;
     padding: 0 32px;
     font-weight: 400;
-    animation-name: animationPopup;
-    animation-duration: 0.5s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
     position: absolute;
     width: 100%;
     bottom: 30px;
+    animation-name: animationPopup;
+    animation-duration: 0.4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
 
 
 
@@ -261,11 +262,12 @@ button {
 
 
 .bottom_nav {
-    background-color: #ffffff13;
+    background-color: #ffffff;
     max-width: 1024px;
     width: calc(100% - 40px);
     position: fixed;
     bottom: 0;
+
 }
 
 .bottom_nav .inner {
