@@ -211,6 +211,7 @@ section .inner {
     border: 1px solid #FF3535;
     border-radius: 20px;
     white-space: nowrap;
+    color: #000000;
 
 }
 
