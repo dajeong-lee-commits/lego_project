@@ -13,20 +13,22 @@
     <script>
         window.onload = () => {
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 3,
-                spaceBetween: 16,
+                slidesPerView: 1.5,
+                spaceBetween: 8,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                 },
             });//main
 
-            let categoryBtn = document.querySelector('.category_btn');
+            let categoryBtn = document.getElementsByClassName('category_btn');
+            
 
-            categoryBtn.addEventListener('click', () => {
-                categoryBtn.classList.remove('active');
+            //categoryBtn.addEventListener('click', () => {
+                //categoryBtn.style.backgroundcolor = 'rgb(240, 161, 174)';
                 //alert();
-            });
+                //categoryBtn.style.display = 'none';
+            //});
 
 
 
@@ -42,6 +44,10 @@
     <div id="wrap">
         <header class="header">
             <div class="inner">
+                <h1 class="logo">
+                    <a href="#"><img src="img/lego_logo.svg" alt=""></a>
+
+                </h1><!-- .logo -->
                 <ul class="header_nav">
                     <li>
                         <a href="#" class="search_btn">
@@ -76,12 +82,6 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#">
-                                <img src="img/메인/이미지1.jpg" alt="">
-                            </a>
-
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <a href="#">
                                 <img src="img/메인/이미지2.png" alt="">
                             </a>
                         </div><!-- .swiper-slide end -->
@@ -92,7 +92,7 @@
                         </div><!-- .swiper-slide end -->
                         <div class="swiper-slide">
                             <a href="#">
-                                <img src="img/메인/이미지4.jpg" alt="">
+                                <img src="img/메인/이미지4.png" alt="">
                             </a>
                         </div><!-- .swiper-slide end -->
                         <div class="swiper-slide">
@@ -182,7 +182,7 @@
                         <h2>BEST5</h2>
                         <p>분야별 베스트 셀러를 모아봤어요</p>
                     </div><!-- .text end -->
-                    <a href="../lego_project/sub/sub_index.html">
+                    <a href="sub/sub_index.html">
                         <span>더보기</span>
                         <img src="img/icon/more_view.svg" alt="더보기 버튼">
                     </a>
@@ -190,8 +190,8 @@
 
                 <ul class="category">
                     <li><button class="category_btn active">게임</button></li>
-                    <li><button class="category_btn active">어른이</button></li>
-                    <li><button class="category_btn active">빌딩</button></li>
+                    <li><button class="category_btn">어른이</button></li>
+                    <li><button class="category_btn">빌딩</button></li>
                     <li><button class="category_btn">동물의숲</button></li>
                     <li><button class="category_btn">동물</button></li>
                     <li><button class="category_btn">미술·공예</button></li>
@@ -372,7 +372,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../lego_project/sub/sub_index.html" class="store">
+                        <a href="sub/sub_index.html" class="store">
                             <div class="image">
                                 <img src="img/icon/nav/icon_store/기본.svg" alt="스토어">
                             </div>
