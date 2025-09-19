@@ -84,7 +84,7 @@ button {
 .section .inner .sub_menu li .menu_btn.active {
     color: #FF3535;
     border-bottom: 3px solid;
-    
+
 }
 
 
@@ -140,8 +140,8 @@ button {
     position: absolute;
     width: 24px;
     height: 24px;
-    bottom: 10%;
-    right: 10%;
+    bottom: 5%;
+    right: 5%;
     transform: translate(-10%, -10%);
 
 
@@ -178,21 +178,37 @@ button {
     height: 16px;
     padding: 0 6px;
     font-size: 11px;
-    background-color: #ffd557;
+    background-color: #ffeebd;
+    color: #ff9900;
     border-radius: 4px;
 }
 
 .section .inner .list .item a .text .flag .special {
-    background-color: #ffb8c4;
-
+    background-color: #ffe1e1;
+    color: #ff5252
 }
 
 .section .inner .list .popup {
-    max-width: 500px;
+    background-color: #ff9900;
     width: calc(100% - 40px);
     position: fixed;
-    bottom: 96px;
+    bottom: 0;
+    height: 146px;
 
+
+
+
+}
+
+@keyframes animationPopup {
+    from {
+        margin-bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        margin-bottom: 66px;
+    }   opacity: 1;
 }
 
 .section .inner .list .popup .layer_popup {
@@ -205,12 +221,22 @@ button {
     border-radius: 10px;
     padding: 0 32px;
     font-weight: 400;
+    animation-name: animationPopup;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+
+
 
 }
 
 .section .inner .list .popup .layer_popup img {
     width: 16px;
     height: 16px;
+
 
 }
 
@@ -235,7 +261,7 @@ button {
 
 
 .bottom_nav {
-    background-color: #ffffff;
+    background-color: #ffffff13;
     max-width: 1024px;
     width: calc(100% - 40px);
     position: fixed;
@@ -283,5 +309,5 @@ button {
 .bottom_nav .inner .nav_btn li a span {
     font-size: 12px;
     font-weight: 600;
-    
+
 }
